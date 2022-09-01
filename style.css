@@ -129,6 +129,12 @@ body
             align-items: center;
         }
 
+        .placeholder
+        {
+            padding-left: 10px;
+            font-weight: 700;
+        }
+
         .research_button
         {
             color: white;
@@ -166,7 +172,6 @@ body
         .filtre
         {
             display: flex;
-            width: fit-content;
             border: 2px solid #f2f2f2;
             border-radius: 25px;
             margin: 5px 15px 5px 0px;
@@ -361,7 +366,7 @@ body
                 .aside_card img
                 {
                     border-radius: 20px 0px 0px 20px;
-                    width: 100%;
+                    min-width: 50%;
                     height: 100%;
                     padding: 5px;
                     object-fit: cover;
@@ -526,14 +531,6 @@ body
                     margin-bottom: 15px;
                 }
 
-@media all and (min-width: 992px)
-{
-    .research_button i
-    {
-        display: none;
-    }
-}
-
 @media all and (max-width: 991px)
 {
     body
@@ -591,20 +588,6 @@ body
                 min-width: fit-content;
             }
 
-            .research_button .bolder
-            {
-                display: none;
-            }
-
-            .research_button
-            {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0px 10px 0px 0px;
-                border-radius: 10px;
-            }
-
             main
             {
                 margin: 0px 10px 0px 10px;
@@ -617,6 +600,8 @@ body
 
             aside
             {
+                flex-direction: row;
+                flex-wrap: wrap;
                 width: 100%;
                 border-radius: 0px;
                 padding: 10px;
@@ -625,18 +610,25 @@ body
 
             aside a
             {
+                width: 31%;
                 padding: 5px 0px 5px 0px;
                 height: 175px;
             }
 
             aside > .bolder
             {
+                width: 100%;
                 margin: 15px;
             }
 
             .aside_card
             {
                 height: 100%;
+            }
+
+            .aside_card img
+            {
+                min-width: 50%;
             }
 
             .aside_card .footer_card
@@ -653,14 +645,14 @@ body
 
             .hbg_main_card
             {
-                flex-direction: column;
+                justify-content: space-around;
                 width: 100%;
                 margin: auto;
             }
 
             .hbg_main_card a
             {
-                width: 100%;
+                width: 45%;
             }
 
             .activite_main_wrapper
@@ -746,4 +738,140 @@ body
             flex-direction: column;
             height: auto;
         }
+}
+
+@media all and (min-width: 768px)
+{
+    .research_button i
+    {
+        display: none;
+    }
+}
+
+
+
+@media all and (max-width: 767px)
+{
+
+    .research_button .bolder
+    {
+        display: none;
+    }
+
+    #filtres_main_wrapper .bold
+    {
+        width: 100%;
+    }
+
+    aside
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        border-radius: 0px;
+        padding: 10px;
+        margin: 10px 0px 40px 0px;
+    }
+
+    aside a
+    {
+        width: 100%;
+        padding: 5px 0px 5px 0px;
+        height: 175px;
+    }
+
+    .aside_card img
+    {
+        min-width: 40%;
+    }
+
+    .hbg_main_card
+    {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .hbg_main_card a
+    {
+        width: 100%;
+    }
+
+    .activite_main_wrapper
+    {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .activites_card
+    {
+        width: 100%;
+    }
+
+    .activites_card > a
+    {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .vieux
+    {
+        height: 200px;
+    }
+
+    .vieux  .activite_img
+    {
+        height: 70%;
+    }
+
+    .fort
+    {
+        height: 200px;
+    }
+
+    .fort  .activite_img
+    {
+        height: 70%;
+    }
+
+    .ile
+    {
+        height: 200px;
+    }
+
+    .ile .activite_img
+    {
+        height: 70%;
+    }
+
+    .calanques
+    {
+        height: 200px;
+    }
+
+    .calanques .activite_img
+    {
+        height: 70%;
+    }
+
+    .garde
+    {
+        height: 200px;
+    }
+
+    .garde .activite_img
+    {
+        height: 70%;
+    }
+
+    .longchamp
+    {
+        height: 200px;
+    }
+
+    .longchamp .activite_img
+    {
+        height: 70%;
+    }
 }
