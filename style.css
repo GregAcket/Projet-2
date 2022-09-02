@@ -759,10 +759,13 @@ body
     }
 }
 
-
-
 @media all and (max-width: 767px)
 {
+
+    .research_button
+    {
+        border-radius: 10px;
+    }
 
     .research_button .bolder
     {
