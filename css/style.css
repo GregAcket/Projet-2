@@ -608,6 +608,11 @@ body
             {
                 flex-direction: column-reverse;
             }
+
+            .hbg_cards
+            {
+                height: 280px;
+            }
             
             .hbg_img
             {
