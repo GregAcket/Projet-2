@@ -161,12 +161,12 @@ body
                 margin-bottom: 15px;
             }
 
-                #filtres_main_wrapper .bold
+                .top .bold
                 {
                     margin: 0px 15px 0px 15px;
                 }
 
-                #filtres_main_wrapper .bold:nth-child(1)
+                .top .bold:nth-child(1)
                 {
                     margin-left: 0px;
                 }
@@ -179,6 +179,16 @@ body
                         margin: 5px 15px 5px 0px;
                     }
 
+                    .filtre:nth-child(5)
+                    {
+                        min-width: 200px;
+                    }
+
+                    .filtre:nth-child(5) .bold
+                    {
+                        position: absolute;
+                        margin-left: 46px;
+                    }
                         .contours
                         {
                             display: flex;
@@ -200,7 +210,7 @@ body
                             }
                             to 
                             {
-                                width: 100%;     
+                                width: 100%;
                             }
                         }
 
@@ -704,7 +714,7 @@ body
         display: none;
     }
 
-    #filtres_main_wrapper .bold
+    .top .bold:nth-child(1)
     {
         width: 100%;
     }
