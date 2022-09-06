@@ -703,6 +703,16 @@ body
 
 @media all and (max-width: 767px)
 {
+    form
+    {
+        justify-content: space-between;
+        width: 330px;
+    }
+
+    input
+    {
+        width: 100%;
+    }
 
     .research_button
     {
