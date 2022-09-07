@@ -266,9 +266,10 @@ body
                 margin: 20px 0px 20px 0px;
             }
 
-                #hebergement
+                h2
                 {
                     font-weight: 700;
+                    font-size: 18px;
                     margin: 20px 0px 10px 10px;
                 }
 
